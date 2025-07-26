@@ -2,50 +2,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ajay Babu Nannapaneni | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
-    <img src="profile.png" alt="Ajay Babu" class="profile-pic">
-    <h1>Ajay Babu Nannapaneni</h1>
-    <p class="tagline">Software Engineer | AI & Data Enthusiast | MSCS @ USF</p>
-    <div class="social-icons">
-      <a href="mailto:ajaybabunannapaneni@usf.edu" title="Email"><img src="https://img.icons8.com/ios-glyphs/30/000000/email.png" alt="Email"></a>
-      <a href="https://linkedin.com/in/ajaynannapaneni" target="_blank" title="LinkedIn"><img src="https://img.icons8.com/ios-filled/30/0077b5/linkedin.png" alt="LinkedIn"></a>
-      <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" title="GitHub"><img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="GitHub"></a>
-    </div>
+  <header>
+    <nav class="navbar">
+      <div class="nav-logo">Ajay</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="content">
-    <section class="card">
+  <section id="home" class="section home">
+    <div class="container">
+      <h1>Hello, I'm <span>Ajay Babu Nannapaneni</span></h1>
+      <p>Software Engineer | AI & ML Enthusiast | MSCS @ USF</p>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <div class="container">
       <h2>About Me</h2>
-      <p>I’m a passionate software engineer and AI/ML enthusiast with 4+ years of experience across game development, machine learning, and crash data analytics. Currently pursuing my MS in Computer Science at USF, I specialize in developing predictive dashboards and intelligent traffic safety tools.</p>
-    </section>
+      <p>I’m a passionate software engineer with 4+ years of experience in game development, machine learning, and traffic crash data analytics. I specialize in building AI-powered tools, predictive dashboards, and intuitive user experiences.</p>
+    </div>
+  </section>
 
-    <section class="card">
-      <h2>Featured Projects</h2>
-      <ul>
-        <li><strong>AI Crash Classifier:</strong> AI chatbot that classifies traffic crash reports using LLMs.</li>
-        <li><strong>Crash Severity Predictor:</strong> Real-time ML model with Power BI heatmaps.</li>
-        <li><strong>Casino Game Suite:</strong> 7+ games developed with Unity and GDK C++.</li>
-      </ul>
-      <p><a href="projects.html">View all projects →</a></p>
-    </section>
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>AI Crash Classifier</h3>
+          <p>Chatbot using OpenAI LLMs to automate crash typing with law enforcement logic.</p>
+        </div>
+        <div class="card">
+          <h3>Crash Severity Prediction</h3>
+          <p>ML model with Power BI geospatial heatmaps using Florida crash data.</p>
+        </div>
+        <div class="card">
+          <h3>Casino Game Suite</h3>
+          <p>Developed 7+ real-money games with Unity/C# and C++ GDK modules for C2/C3 markets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="card">
-      <h2>Experience</h2>
-      <ul>
-        <li><strong>Graduate Research Assistant – USF CUTR</strong></li>
-        <li><strong>AI/ML Intern – Infrastructure Consulting & Engineering</strong></li>
-        <li><strong>Associate Software Engineer – Light & Wonder</strong></li>
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>Python</li>
+        <li>Power BI</li>
+        <li>Unity</li>
+        <li>SQL</li>
+        <li>React.js</li>
+        <li>Machine Learning</li>
+        <li>C++ (GDK)</li>
       </ul>
-      <p><a href="experience.html">View full experience →</a></p>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:ajaybabunannapaneni@usf.edu">ajaybabunannapaneni@usf.edu</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/ajaynannapaneni" target="_blank">linkedin.com/in/ajaynannapaneni</a></p>
+      <p>GitHub: <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">github.com/YOUR_GITHUB_USERNAME</a></p>
+    </div>
+  </section>
 
   <footer>
     <p>&copy; 2025 Ajay Babu Nannapaneni</p>
